@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+    color: #222;
+}
+
+.navbar {
+    padding: 5px;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.home-inner {
+    background-image: url("../img/topImg3.jpg");
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.caption h3 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-html5 {
+    color: #ff0000;
+}
+
+.fa-css3-alt {
+    color: #2163af;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+.fa-bold {
+    color: #563d7c;
+}
+
+.fa-code-branch {
+    color: #f1502f;
+}
+
+.fa-spinner {
+    color: #000
+}
+
+.fa-html5, .fa-css3-alt, .fa-js, .fa-bold, .fa-code-branch, .fa-spinner {
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.Cimg {
+    width: 10em;
+}
+
+/*.hidden {
+    width: 100%;
+    margin-bottom: 2rem;
+}*/
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    font-size: 3em;
+    padding: 3rem;
+}
+
+.fa-facebook-square {
+    color: #3b5998
+}
+
+.fa-github {
+    color:#211f1f;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-facebook-square:hover,
+.fa-github:hover,
+.fa-linkedin:hover {
+    color: #d5d5d5;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.dark {
+    border-top: 1px solid #484848;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+  }
+
+@media (max-width: 768px) {
+    .caption h3 {
+        font-size: 350%;
+    }
+    .welcome {
+        font-size: 75%;
+    }
+    p.card-text {
+        font-size: 80%;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .caption h3 {
+        font-size: 250%;
+    }
+    .welcome {
+        font-size: 50%;
+    }
+    p.card-text {
+        font-size: 60%;
+    }
+    .social a {
+        font-size: 2em;
+        padding: .7 rem;
+    }
+}
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed {
+  background-image: url("../img/fullStack.jpg");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
