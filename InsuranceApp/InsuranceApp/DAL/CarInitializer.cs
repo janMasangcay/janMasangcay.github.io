@@ -6,9 +6,9 @@ using InsuranceApp.Models;
 
 namespace InsuranceApp.DAL
 {
-    public class CarInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<InsuranceContext>
+    public class CarInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<CarContext>
     {
-        protected override void Seed(InsuranceContext context)
+        protected override void Seed(CarContext context)
         {
             var cars = new List<Car>
             {

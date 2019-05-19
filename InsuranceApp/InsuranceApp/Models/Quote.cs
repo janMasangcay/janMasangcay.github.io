@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,8 @@ namespace InsuranceApp.Models
 {
     public class Quote
     {
+        [Key]
+        public int QuoteId { get; set; }
         public string FirstName { get; set; }
 	    public string LastName { get; set; }
 	    public string EmailAddress { get; set; }

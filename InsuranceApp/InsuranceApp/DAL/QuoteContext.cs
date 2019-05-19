@@ -8,11 +8,10 @@ using System.Web;
 
 namespace InsuranceApp.DAL
 {
-    public class InsuranceContext : DbContext
+    public class QuoteContext : DbContext
     {
-        public InsuranceContext() : base("InsuranceContext") { }
+        public QuoteContext() : base("QuoteContext") { }
 
-        public DbSet<Car> Cars { get; set; }
         public DbSet<Quote> Quotes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

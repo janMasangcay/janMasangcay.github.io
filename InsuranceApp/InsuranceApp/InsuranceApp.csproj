@@ -128,7 +128,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\CarInitializer.cs" />
-    <Compile Include="DAL\InsuranceContext.cs" />
+    <Compile Include="DAL\CarContext.cs" />
+    <Compile Include="DAL\QuoteContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
