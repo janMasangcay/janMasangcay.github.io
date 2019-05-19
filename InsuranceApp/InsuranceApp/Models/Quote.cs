@@ -5,7 +5,7 @@ using System.Web;
 
 namespace InsuranceApp.Models
 {
-    public class Quotes
+    public class Quote
     {
         public string FirstName { get; set; }
 	    public string LastName { get; set; }

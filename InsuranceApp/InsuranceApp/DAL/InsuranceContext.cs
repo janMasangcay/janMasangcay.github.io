@@ -12,8 +12,8 @@ namespace InsuranceApp.DAL
     {
         public InsuranceContext() : base("InsuranceContext") { }
 
-        public DbSet<Cars> Cars { get; set; }
-        public DbSet<Quotes> Quotes { get; set; }
+        public DbSet<Car> Cars { get; set; }
+        public DbSet<Quote> Quotes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

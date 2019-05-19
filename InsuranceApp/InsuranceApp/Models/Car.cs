@@ -5,7 +5,7 @@ using System.Web;
 
 namespace InsuranceApp.Models
 {
-    public class Cars
+    public class Car
     {
         public int Year { get; set; }
         public string Make { get; set; }
