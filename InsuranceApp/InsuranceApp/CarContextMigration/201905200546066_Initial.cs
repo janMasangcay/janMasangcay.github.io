@@ -1,4 +1,4 @@
-namespace InsuranceApp.CarContextMigrations
+namespace InsuranceApp.CarContextMigration
 {
     using System;
     using System.Data.Entity.Migrations;

@@ -1,4 +1,4 @@
-namespace InsuranceApp.CarContextMigrations
+namespace InsuranceApp.CarContextMigration
 {
     using InsuranceApp.Models;
     using System;
@@ -12,7 +12,7 @@ namespace InsuranceApp.CarContextMigrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            MigrationsDirectory = @"CarContextMigrations";
+            MigrationsDirectory = @"CarContextMigration";
         }
 
         protected override void Seed(InsuranceApp.DAL.CarContext context)
@@ -1022,7 +1022,7 @@ namespace InsuranceApp.CarContextMigrations
             };
 
             cars.ForEach(x => context.Cars.Add(x));
-            context.SaveChanges();    
+            context.SaveChanges();
         }
     }
 }
