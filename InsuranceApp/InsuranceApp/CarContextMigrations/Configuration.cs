@@ -1,14 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using InsuranceApp.Models;
-
-namespace InsuranceApp.DAL
+namespace InsuranceApp.CarContextMigrations
 {
-    public class CarInitializer : System.Data.Entity.DropCreateDatabaseAlways<CarContext>
+    using InsuranceApp.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<InsuranceApp.DAL.CarContext>
     {
-        protected override void Seed(CarContext context)
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = false;
+            MigrationsDirectory = @"CarContextMigrations";
+        }
+
+        protected override void Seed(InsuranceApp.DAL.CarContext context)
         {
             var cars = new List<Car>
             {
@@ -272,7 +279,7 @@ namespace InsuranceApp.DAL
                 new Car{Year=2010, Make="Buick", Model="LaCrosse"},
                 new Car{Year=2010, Make="Buick", Model="Enclave"},
                 new Car{Year=2010, Make="Lamborghini", Model="Gallardo"},
-                new Car{Year=2010, Make="Lamborghini", Model="Murciélago"},
+                new Car{Year=2010, Make="Lamborghini", Model="Murci�lago"},
                 new Car{Year=2010, Make="MINI", Model="Clubman"},
                 new Car{Year=2010, Make="MINI", Model="Cooper"},
                 new Car{Year=2010, Make="MINI", Model="Cooper Clubman"},
@@ -1015,7 +1022,7 @@ namespace InsuranceApp.DAL
             };
 
             cars.ForEach(x => context.Cars.Add(x));
-            context.SaveChanges();
+            context.SaveChanges();    
         }
     }
 }

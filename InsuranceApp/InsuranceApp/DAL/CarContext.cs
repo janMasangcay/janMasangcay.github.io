@@ -10,7 +10,10 @@ namespace InsuranceApp.DAL
 {
     public class CarContext : DbContext
     {
-        public CarContext() : base("CarContext") { }
+        public CarContext() : base("CarContext")
+        {
+
+        }
 
         public DbSet<Car> Cars { get; set; }
 
